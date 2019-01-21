@@ -1,0 +1,7 @@
+<button [hidden]="showPlay" mat-raised-button color="warn" (click)="stopTheShark()" (mouseenter)="moveStopButton()" [style.top]="top" [style.left]="left">
+  Make it stop!
+</button>
+<button [hidden]="!showPlay" id="play" class="ml-1" mat-raised-button color="primary" (click)="playTheShark()">
+  Yay baby shark!
+  <i class="fa fa-fish"></i>
+</button>
