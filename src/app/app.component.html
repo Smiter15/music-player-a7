@@ -10,8 +10,8 @@
       <i class="fa fa-search search-icon"></i>
       <input type="text" placeholder="Search Artist" class="search-input" #searchBox>
       <mat-list class="mat-elevation-z3 search-result" *ngIf="searchResults.length > 0 && !hideResult">
-        <mat-list-item class="search-result-item" role="listitem" *ngFor="let artist of searchResults">
-          <a (click)="onResultClick()" [routerLink]="[artist.artistId, artist.artistName]">{{artist.artistName}}</a>
+        <mat-list-item class="search-result-item" role="listitem" *ngFor="let artist of searchResults" (click)="onResultClick()" [routerLink]="[artist.artistId, artist.artistName]">
+          <a>{{artist.artistName}}</a>
         </mat-list-item>
       </mat-list>
     </div>
