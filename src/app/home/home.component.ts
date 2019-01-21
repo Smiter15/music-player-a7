@@ -34,6 +34,7 @@ export class HomeComponent implements OnInit {
 
   stopTheShark() {
     this.playerService.playTrack('');
+    this.showPlay = true;
   }
 
   moveStopButton() {
